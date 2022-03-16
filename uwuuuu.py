@@ -63,6 +63,7 @@
 
 
 from shutil import SpecialFileError
+from weakref import WeakKeyDictionary
 
 
 class Dog:
@@ -290,51 +291,110 @@ random()
 # ass.amimals_3 = 'snake'
 # print(ass.main())
 
-# print()
-'''
-class Cars:
-        def __init__ (self) -> None:
-                self.model1 = 'Touota Supra'
-                self.model2 = 'Lexus Lx 570'
-                self.model3 = 'Paganu Haura'
-        def main(self):
-                return self.model1,self.model2,self.model3
-speed = Cars()
-print(speed.main())
-speed.model1 = 'Mersedes Gtr63'
-speed.model2 = 'Bmw M4'
-speed.model3 = 'Audi R8'
-print(speed.main()) 
-'''
-# class Car:
-#     def __init__ (self)->None:
-#         self.make = 'Japan'
-#         self.model = 'Fit'
-#         self.year = '2001'
-#         self.odometer = 0
-#         self.fuel = 70
-#         self.drive = 50
+
+
+# class House:
+#     def __init__(self)-> None:
+#         self.hometype = 'Моналитный дом '
+#         self.area = 30 
+#         self.furniture = 0
 #     def main(self):
-#             return self.make,self.model,self.year,self.odometer,self.fuel,self.drive
-# optic = Car()
-# print(optic.main())
-# class Dist(Car):
-#     def __add_distance__ (drive): 
-#         def main(self):
-#             return self.distance
+#             return f"Тип дома:{self.hometype}Участок:{self.area} Мебели:{self.furniture}"
+# home = House()
+# print(home.main())
+# home.furniture = ('Шкаф[2]'),('Стол[1.5]'),('Кровать[4]')
+# print(home.main())-+
+# bed = 4
+# cupboard = 2
+# table = 1,5
 
-class House:
-    def __init__(self)-> None:
-        self.hometype = 'Моналитный дом '
-        self.area = 30 
-        self.furniture = 0
-    def main(self):
-            return f"Тип дома:{self.hometype}Участок:{self.area} Мебели:{self.furniture}"
-home = House()
-print(home.main())
-home.furniture = ('Шкаф[2]'),('Стол[1.5]'),('Кровать[4]')
-print(home.main())
-bed = 4
-cupboard = 2
-table = 1,5
+     
+# class Student:
+#     def __init__ (self,name,last_name, department, year_of_extrance) ->None:
+#         self.name = name
+#         self.last_name = last_name
+#         self.department = department
+#         self.year_of_extrance = year_of_extrance
+#     def main(self):
+#         return f'{self.name} {self.last_name} поступил в {self.department}  {self.year_of_extrance} году' 
+# unreal = Student('Вова','Иванов','Програмировние','2017')
+# print(unreal.main())
 
+# class Airplane:
+#     def __init__(make,self,model,year,max_speed,odometer,is_flying) -> None:
+#         self.make = make
+#         self.model = model
+#         self.year = year
+#         self.max_speed = max_speed
+#         self.odometer = odometer
+#         self.is_flying = is_flying
+#     def main(self):
+#         return {self.make},{self.model},{self.year},{self.max_speed},{self.odometer},{self.is_flying}
+# fire = Airplane('AirBus','A320','')
+
+
+# class Soldier:
+#     def __init__(self) -> None:
+#         self.soldier = 'Ryan'
+
+#     def __str__(self) -> str:
+#         return self.soldier
+
+# class Gun(Soldier):
+#     def __init__(self):
+#         self.gun = 'AK - 47'
+#         self.bullets = 5
+# class Act_of_Shooting(Gun):
+
+#     def fire(self):
+#         while self.bullets > 0:
+#             print('tigidish')
+#             self.bullets -= 1
+#         if self.bullets == 0:
+#             self.bullets += 1
+#         for i in range (self.bullets):
+#             print('tigidish')
+
+
+# a = Soldier()
+# print(a)
+# b = Act_of_Shooting()
+# b.fire()
+
+
+# class War:
+#     def __init__(self) -> None:
+#         self.soldier = 'Frost'
+#     print('Soldier Frost shooting by enemy and kill them')
+#     def __str__(self):
+#         return self.soldier
+
+# class Gun(War):
+#     def __init__(self):
+#         self.gun = 'M-416'
+#         self.patrons = 10
+#     def __str__ (self):
+#         return self.gun
+
+# class Shooting(Gun):
+#     def shoot(self):
+#         while self.patrons > 0:
+#             print('piyiypiyipyiyiypiy')
+#             self.patrons -=1
+#         if self.patrons == 0:
+#             print('My patrons is empty')
+#             self.patrons += 1
+#             print('piypiyppiypiy')
+#         for i in range(self.patrons):
+#             print('piypiypiy')
+
+# a = War()
+# print(a)
+# print('elite S.A.S soldier')
+# b = Shooting()
+# c = Gun()
+# print('He using the')``````
+# print(c)
+# print('and shoot')
+# b.shoot()
+# print('patrons empty')
